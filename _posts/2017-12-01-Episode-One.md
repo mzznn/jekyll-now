@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: EP 001 &raquo; Trailer Park
 ---
 
 # Eine schöne Überschrift

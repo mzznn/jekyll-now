@@ -7,7 +7,7 @@
 
 @import "reset";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Source+Code+Pro');
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -20,8 +20,12 @@ html {
 
 body {
 	background: $navy;
-  font: 22px/1.5 $crimson;
+  font: 20px/1.6 $serif;
   color: $light-blue;
+
+  @include mobile {
+  font: 16px/1.5 $serif;
+  }
 }
 
 .container {
@@ -38,9 +42,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  text-align: center;
   line-height: 1.7;
-  color: $blue;
-  font-family: $sharetechmono;
+  font-family: sans-serif;
+  text-transform: uppercase;
   margin: 0 0 15px;
   padding: 0;
 
@@ -50,7 +55,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 22px;
+  @include mobile {
+    font-size: 18px;
+  }
   a {
     color: inherit;
   }
@@ -82,6 +90,21 @@ a {
     text-decoration: none;
     border-bottom: 1px solid $light-blue;
   }
+}
+
+.logo a {
+  border-bottom: none;
+}
+
+.logo:hover{
+  animation-name: scale;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+@keyframes scale {
+    0% {transform: scale( 1,1);}
+    50% {transform: scale( 1.05,1.05 );}
+    100% {transform: scale( 1,1 );}
 }
 
 ul, ol {
@@ -123,18 +146,24 @@ img {
 }
 
 .date {
-  font-style: italic;
-  color: $blue;
+  font-family: $mono;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $dark-blue;
+  background: $white;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $dark-blue;
+  background: $white;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -164,20 +193,6 @@ img {
 .masthead {
   padding-top: 4rem;
   padding-bottom: 4rem;
-
-}
-
-.site-info {
-    display: block;
-    margin: 0 auto;
-}
-
-.site-name {
-  margin: 0;
-  cursor: pointer;
-}
-.site-name a {
-  border-bottom: none;
 }
 
 //
@@ -185,7 +200,7 @@ img {
 //
 
 .posts > .post {
-  padding-bottom: 2rem;
+  padding-bottom: .2rem;
 }
 
 .posts > .post:last-child {
@@ -198,23 +213,25 @@ img {
     margin: 1.8em .8em;
     border-left: 2px solid $light-blue;
     padding: 0.1em 1em;
-    color: $blue;
+    color: $white;
     font-size: 22px;
     font-style: italic;
   }
 
 
-.wrapper {
+.index--wrapper {
   display: grid;
   grid-template-columns: 120px 0 0;
   grid-gap: 1rem;
-  font-family: $sharetechmono;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: $mono;
   color: $blue;
+  text-transform: uppercase;
 }
 
-.wrapper a {
+.index--wrapper a {
   color: $light-blue;
+  font-family: sans-serif;
 }
 
 
@@ -241,8 +258,13 @@ img {
 }
 
 footer {
-  padding: 20px 0;
+  font-family: $mono;
+  padding: 7rem 0;
   font-size: 18px;
+  opacity: .3;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
