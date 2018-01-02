@@ -102,7 +102,7 @@ a {
   animation-iteration-count: infinite;
 }
 @keyframes scale {
-    0% {transform: scale( 1,1);}
+    0% {transform: scale( 1,1 );}
     50% {transform: scale( 1.05,1.05 );}
     100% {transform: scale( 1,1 );}
 }
@@ -147,7 +147,7 @@ img {
 
 .date {
   font-family: $mono;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 5rem;
@@ -260,11 +260,7 @@ img {
 footer {
   font-family: $mono;
   padding: 7rem 0;
-  font-size: 18px;
-  opacity: .3;
-  &:hover {
-    opacity: 1;
-  }
+  font-size: 16px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
