@@ -7,7 +7,7 @@
 
 @import "reset";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,700');
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -20,7 +20,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.8 $sans;
+  font: 20px/1.6 $sans;
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   color: $darkerGray;
@@ -32,7 +32,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
 
@@ -43,9 +43,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.7;
+  font-weight: 700;
+  line-height: 1.6;
   margin: 0 0 15px;
   padding: 0;
 
@@ -55,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   @include mobile {
     font-size: 18px;
   }
@@ -65,7 +64,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h3 {
@@ -82,40 +81,35 @@ p {
 
 a {
   color: $black;
-  text-decoration: none;
-  border-bottom: 1px solid $lightGray;
+  text-decoration: underline;
 	cursor: pointer;
-  transition: ease-in-out 0.5s;
   &:hover, &:active {
-    text-decoration: none;
-    border-bottom: 1px solid $black;
+    color: $gray;
   }
 }
 
 iframe {
   padding: 2em;
+  background-color: $lightestGray;
+  margin: auto;
+  width: 100%;
+  height: 50vh;
+  &:hover {
+    transition: .2s ease-in-out;
+    background-color: $black;
+  }
+}
+
+.logo {
+  padding: .4rem;
+  font: 24px/1.8 $mono;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $white;
   background-color: $black;
+  text-decoration: none;
 }
 
-.logo a {
-  border-bottom: none;
-}
-
-.logo:hover{
-  animation-name: scale;
-  animation-duration: .5s;
-  animation-iteration-count: infinite;
-}
-@keyframes scale {
-    0% {transform: scale( 1,1 );}
-    50% {transform: scale( 1.05,1.05 );}
-    100% {transform: scale( 1,1 );}
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
 
 ul {
   list-style-type: disc;
@@ -123,6 +117,8 @@ ul {
 
 ol {
   list-style-type: decimal;
+  font-size: 16px;
+  padding: 1rem;
 }
 
 ol ul, ul ol, ul ul, ol ol {
@@ -132,13 +128,15 @@ ol ul, ul ol, ul ul, ol ol {
 ul ul, ol ul {
   list-style-type: circle;
 }
-
+li {
+  margin-bottom: 1rem;
+}
 em, i {
   font-style: italic;
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 img {
@@ -150,25 +148,15 @@ img {
   max-width: none;
 }
 
-.date {
-  font-family: $mono;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 5rem;
-  @include mobile {
-    font-size: 14px;
-  }
-}
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $dark-blue;
-  background: $light-blue;
+  color: $white;
+  background: $darkerGray;
 }
 ::selection {
-  color: $dark-blue;
-  background: $light-blue;
+  color: $white;
+  background: $darkerGray;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -205,7 +193,7 @@ img {
 //
 
 .posts > .post {
-  padding-bottom: .2rem;
+  padding-bottom: 3rem;
 }
 
 .posts > .post:last-child {
@@ -215,46 +203,59 @@ img {
 
 .post {
   blockquote {
-    margin: 1em;
-    border-left: 4px solid $dark-blue;
-    padding: 0.2em 0.8em;
-    color: $navy;
-    background: $light-blue;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    color: $white;
+    font-family: $mono;
+    background: $black;
   }
 
+.footnote {
+  @include smallscript;
+  
+  font-size: 0.8rem;
+  vertical-align: super;
+  margin-left: 2px;
+  letter-spacing: 1px;
 
-.index--wrapper {
-  display: grid;
-  grid-template-columns: 120px 0 0;
-  grid-gap: 1rem;
+  &::before {
+    content: '[';
+  }
+  &::after {
+    content: ']';
+  }
+}
+
+.reversefootnote {
+  @include smallscript;
+
   font-size: 16px;
-  font-family: $mono;
-  color: $gray;
-  text-transform: uppercase;
 }
-
-.index--wrapper a {
-  color: $black;
-  font-family: sans-serif;
-}
-
-
 
 .post--titel {
-        grid-column-start: 4;
+  font-size: 24px;
+  font-weight: 700;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $gray;
     }
+  }
+  }
+
 .post--date {
-        grid-column-start: 1;
+  font-family: $mono;
+  text-transform: uppercase;
+  color: $lightGray;
     }
+.post--excerpt {
+  text-decoration: none;
+}
 
 .comments {
     margin-top: 10px;
   }
 
-.read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
 }
 
 .wrapper-footer {
@@ -263,7 +264,10 @@ img {
 
 footer {
   padding: 7rem 0;
-  font-size: 16px;
+}
+
+.about {
+  text-decoration: none;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

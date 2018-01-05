@@ -3,27 +3,19 @@
 // VARIABLES
 //
 // Colors
-$navy: #001b44;
-$dark-blue: #00449e;
-$blue: #357edd;
-$light-blue: #96ccff;
 
-$light-red: rgba(255, 0, 0, .4);
-$dark-red: rgba(255, 0, 0, 1);
-
-// Grays
 $black: #000;
 $darkerGray: #222222;
 $darkGray: #333333;
 $gray: #666666;
 $lightGray: #a2a2a2;
+$lightestGray: #e2e2e2;
 $white: #ffffff;
 
 
 // Font stacks
 $sans: 'Fira Sans', sans-serif;
-$serif: serif;
-$mono: monospace;
+$mono: 'Fira Mono', monospace;
 
 
 // Mobile breakpoints
@@ -31,4 +23,14 @@ $mono: monospace;
   @media screen and (max-width: 640px) {
     @content;
   }
+}
+
+// Footnotes
+@mixin smallscript {
+  color: blue;
+  font-weight: 700;
+  text-decoration: none;
+    &:hover {
+      color: red;
+    }
 }
