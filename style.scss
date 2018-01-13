@@ -19,12 +19,12 @@ html {
 }
 
 body {
-	background: $white;
+	background: #fafafa;
   font: 20px/1.6 $sans;
   font-weight: 400;
+  font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
   color: $darkerGray;
-
   @include mobile {
   font: 16px/1.5 $sans;
   }
@@ -80,11 +80,11 @@ p {
 }
 
 a {
-  color: $black;
+  color: $blue;
   text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
-    color: $gray;
+    color: $black;
   }
 }
 
@@ -106,9 +106,13 @@ iframe {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $white;
-  background-color: $black;
+  background-color: $blue;
   text-decoration: none;
+  &:hover {
+    color: white;
+  }
 }
+
 
 
 ul {
@@ -128,9 +132,7 @@ ol ul, ul ol, ul ul, ol ol {
 ul ul, ol ul {
   list-style-type: circle;
 }
-li {
-  margin-bottom: 1rem;
-}
+
 em, i {
   font-style: italic;
 }
@@ -140,7 +142,10 @@ strong, b {
 }
 
 img {
+  display: block;
+  margin: auto;
   max-width: 100%;
+  padding: 1rem 0 1rem 0;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -203,21 +208,33 @@ img {
 
 .post {
   blockquote {
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
     padding: 1rem;
     color: $white;
     font-family: $mono;
     background: $black;
   }
 
+// Footnotes
+
+li {
+  margin-bottom: 1rem;
+    &:target {
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    color: $darkBlue;
+    background-color: $lighterBlue;
+    }
+    a {
+      color: $lightBlue;
+    }
+}
+
 .footnote {
   @include smallscript;
-  
-  font-size: 0.8rem;
+  font-size: 0.7em;
   vertical-align: super;
   margin-left: 2px;
   letter-spacing: 1px;
-
   &::before {
     content: '[';
   }
@@ -228,7 +245,8 @@ img {
 
 .reversefootnote {
   @include smallscript;
-
+  vertical-align: middle;
+  margin-left: 4px;
   font-size: 16px;
 }
 
@@ -237,8 +255,9 @@ img {
   font-weight: 700;
   a {
     text-decoration: none;
+    color: $black;
     &:hover {
-      color: $gray;
+      color: $blue;
     }
   }
   }
@@ -249,6 +268,7 @@ img {
   color: $lightGray;
     }
 .post--excerpt {
+  color: $black;
   text-decoration: none;
 }
 

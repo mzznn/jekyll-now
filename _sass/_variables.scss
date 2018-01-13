@@ -12,6 +12,11 @@ $lightGray: #a2a2a2;
 $lightestGray: #e2e2e2;
 $white: #ffffff;
 
+$blue: blue;
+$darkerBlue: darken( $blue, 42% );
+$darkBlue: darken( $blue, 22% );
+$lightBlue: lighten( $blue, 20% );
+$lighterBlue :lighten( $blue, 46% );;
 
 // Font stacks
 $sans: 'Fira Sans', sans-serif;
@@ -31,6 +36,6 @@ $mono: 'Fira Mono', monospace;
   font-weight: 700;
   text-decoration: none;
     &:hover {
-      color: red;
+      color: $black;
     }
 }
