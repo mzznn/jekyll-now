@@ -25,6 +25,7 @@ body {
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
   color: $darkerGray;
+
   @include mobile {
   font: 16px/1.5 $sans;
   }
@@ -32,7 +33,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 850px;
   padding: 0 10px;
   width: 100%;
 
@@ -145,7 +146,8 @@ img {
   display: block;
   margin: auto;
   max-width: 100%;
-  padding: 1rem 0 1rem 0;
+  background: linear-gradient(270deg, $lighterBlue, $blue);
+  padding: 1em;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -208,11 +210,11 @@ img {
 
 .post {
   blockquote {
+    font-family: $mono;
+    color: $darkBlue;
+    background-color: $lighterBlue;
     margin: 0.5rem 0 0.5rem 0;
     padding: 1rem;
-    color: $white;
-    font-family: $mono;
-    background: $black;
   }
 
 // Footnotes
@@ -268,7 +270,7 @@ li {
   color: $lightGray;
     }
 .post--excerpt {
-  color: $black;
+  color: $darkerGray;
   text-decoration: none;
 }
 
