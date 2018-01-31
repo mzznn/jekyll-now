@@ -7,8 +7,9 @@
 
 @import "reset";
 @import "variables";
+@import "highlights";
+@import "svg-icons";
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,700');
-// Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -89,31 +90,22 @@ a {
   }
 }
 
-iframe {
-  padding: 2em;
-  background-color: $lightestGray;
-  margin: auto;
-  width: 100%;
-  height: 50vh;
-  &:hover {
-    transition: .2s ease-in-out;
-    background-color: $black;
-  }
-}
-
 .logo {
-  padding: .4rem;
-  font: 24px/1.8 $mono;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: $white;
-  background-color: $blue;
+  color: black;
+  display: inline-block;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
   &:hover {
-    color: white;
-  }
+      transform:scale(3);
+    }
 }
 
+.blog--head {
+  text-decoration: none;
+  color: $darkBlue;
+  background-color: $lighterBlue;
+}
 
 
 ul {
@@ -142,12 +134,20 @@ strong, b {
   font-weight: 700;
 }
 
+span {
+  color: $darkBlue;
+  background-color: $lighterBlue;
+}
+
+.twitter-tweet {
+  margin: auto;
+}
+
 img {
   display: block;
   margin: auto;
   max-width: 100%;
-  background: linear-gradient(270deg, $lighterBlue, $blue);
-  padding: 1em;
+  padding: 0.5em;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -158,12 +158,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $white;
-  background: $darkerGray;
+  color: $black;
+  background: $lightestGray;
 }
 ::selection {
-  color: $white;
-  background: $darkerGray;
+  color: $black;
+  background: $lightestGray;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -291,8 +291,3 @@ footer {
 .about {
   text-decoration: none;
 }
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
