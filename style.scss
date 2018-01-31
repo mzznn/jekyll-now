@@ -137,6 +137,10 @@ strong, b {
 span {
   color: $darkBlue;
   background-color: $lighterBlue;
+    &.arrows {
+      color: $lightGray;
+      background-color: transparent;
+    }
 }
 
 .twitter-tweet {
