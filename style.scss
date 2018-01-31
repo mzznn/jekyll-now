@@ -253,8 +253,7 @@ li {
 }
 
 .post--titel {
-  font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   a {
     text-decoration: none;
     color: $black;
@@ -266,13 +265,9 @@ li {
 
 .post--date {
   font-family: $mono;
-  text-transform: uppercase;
+  font-size: 16px;
   color: $lightGray;
     }
-.post--excerpt {
-  color: $darkerGray;
-  text-decoration: none;
-}
 
 .comments {
     margin-top: 10px;

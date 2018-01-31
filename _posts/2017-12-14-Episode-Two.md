@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EP 002 &raquo; Tragic Event With Optimistic Outcome
+title: Digging the trenches
 ---
 Auctor rhoncus suspendisse tincidunt dolor enim posuere convallis fermentum quisque, himenaeos ut sapien praesent orci primis gravida nisi, risus mollis aliquam id risus suspendisse commodo mi sociosqu placerat enim duis porta taciti dictum aliquet commodo, felis auctor sagittis luctus est bibendum felis per feugiat tristique id elit tempus quis, aliquet proin pulvinar nibh pretium condimentum duis, lectus etiam vestibulum tristique eleifend porttitor.
 

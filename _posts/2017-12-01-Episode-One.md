@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EP 001 &raquo; Trailer Park
+title: A faustian bargain in video game difficulty
 ---
 Lorem ipsum dapibus eleifend facilisis lectus ultrices eleifend vehicula sapien malesuada, ultricies semper ipsum id vehicula blandit hendrerit senectus ante, lorem mattis dictumst nulla vivamus elementum nisi adipiscing viverra nunc nisi placerat ornare lacinia odio at posuere sed ultrices, vehicula cras congue amet fermentum cubilia tortor orci, leo euismod arcu consequat velit ut sagittis praesent taciti integer ac massa aptent posuere nisi hac quis, pharetra tempus euismod pretium nostra hendrerit.
 
