@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-[kilian@zelfo.com](mailto:kilian@zelfo.com)
+[Twitter](https://mobile.twitter.com/kilianzelfo)
