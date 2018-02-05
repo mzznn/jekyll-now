@@ -9,7 +9,7 @@
 @import "variables";
 @import "highlights";
 @import "svg-icons";
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
 
 /**************/
 /* BASE RULES */
@@ -21,7 +21,7 @@ html {
 
 body {
 	background: #fafafa;
-  font: 20px/1.6 $sans;
+  font: 20px/1.6 $serif;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -45,9 +45,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
   font-weight: 700;
   line-height: 1.6;
-  margin: 0 0 15px;
+  color: $lightGray;
+  text-align: center;
+  margin: 0 0 25px;
   padding: 0;
 
   @include mobile {
@@ -56,25 +59,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
   @include mobile {
-    font-size: 18px;
+    font-size: 16px;
   }
   a {
     color: inherit;
   }
-}
-
-h2 {
-  font-size: 22px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
 }
 
 p {
@@ -103,6 +94,7 @@ a {
 
 .blog--head {
   text-decoration: none;
+  font-family: $sans;
   color: $darkBlue;
   background-color: $lighterBlue;
 }
@@ -214,10 +206,10 @@ img {
 
 .post {
   blockquote {
-    font-family: $mono;
+    font-family: $sans;
     color: $darkBlue;
     background-color: $lighterBlue;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.3rem 0 0.3rem 0;
     padding: 1rem;
   }
 
@@ -233,6 +225,10 @@ li {
     a {
       color: $lightBlue;
     }
+}
+
+.footnotes {
+  font-family: $sans;
 }
 
 .footnote {

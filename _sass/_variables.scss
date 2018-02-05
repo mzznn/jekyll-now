@@ -19,8 +19,9 @@ $lightBlue: lighten( $blue, 20% );
 $lighterBlue :lighten( $blue, 46% );
 
 // Font stacks
-$sans: 'Fira Sans', sans-serif;
-$mono: 'Fira Mono', monospace;
+$sans: sans-serif;
+$serif: 'Gentium Book Basic', serif;
+$mono: monospace;
 
 
 // Mobile breakpoints
@@ -32,6 +33,7 @@ $mono: 'Fira Mono', monospace;
 
 // Footnotes
 @mixin smallscript {
+  font-family: $sans;
   color: blue;
   font-weight: 700;
   text-decoration: none;
