@@ -1,8 +1,14 @@
 ---
 layout: post
 title: Digging the trenches
+categories: Essay
 ---
 Auctor rhoncus suspendisse tincidunt dolor enim posuere convallis fermentum quisque, himenaeos ut sapien praesent orci primis gravida nisi, risus mollis aliquam id risus suspendisse commodo mi sociosqu placerat enim duis porta taciti dictum aliquet commodo, felis auctor sagittis luctus est bibendum felis per feugiat tristique id elit tempus quis, aliquet proin pulvinar nibh pretium condimentum duis, lectus etiam vestibulum tristique eleifend porttitor.
+
++ Ein Stichpunkt der hier steht ist sehr schön
++ Noch ein sehr toller Punkt, aber etwas länger als der erste nur zum Testen.
++ Es geht weiter, immer weiter.
++ China überhol mich doch [China](https://www.google.com)
 
 Lorem ipsum dapibus eleifend facilisis lectus ultrices eleifend vehicula sapien malesuada, ultricies semper ipsum id vehicula blandit hendrerit senectus ante, lorem mattis dictumst nulla vivamus elementum nisi adipiscing viverra nunc nisi placerat ornare lacinia odio at posuere sed ultrices, vehicula cras congue amet cubilia tortor orci, leo euismod arcu consequat velit ut sagittis praesent taciti integer ac massa aptent posuere nisi hac quis, pharetra tempus euismod pretium nostra hendrerit.
 

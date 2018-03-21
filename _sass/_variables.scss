@@ -12,17 +12,22 @@ $lightGray: #a2a2a2;
 $lightestGray: #e2e2e2;
 $white: #ffffff;
 
-$blue: blue;
-$darkerBlue: darken( $blue, 42% );
-$darkBlue: darken( $blue, 22% );
-$lightBlue: lighten( $blue, 20% );
-$lighterBlue :lighten( $blue, 46% );
+$purple: #706fd3;
+$darkerPurple:    darken( $purple, 32% );
+$darkPurple:      darken( $purple, 22% );
+$lightPurple:     lighten( $purple, 20% );
+$lighterPurple:   lighten( $purple, 32% );
+
+$green: #47c652;
+$darkerGreen:   darken( $green, 32% );
+$darkGreen:     darken( $green, 22% );
+$lightGreen:    lighten( $green, 20% );
+$lighterGreen:  lighten( $green, 32% );
 
 // Font stacks
-$sans: sans-serif;
-$serif: 'Crimson Text', serif;
-$mono: monospace;
-
+$sans: 'Fira Sans', sans-serif;
+$serif: serif;
+$mono: 'Fira Mono', monospace;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -34,8 +39,8 @@ $mono: monospace;
 // Footnotes
 @mixin smallscript {
   font-family: $sans;
-  color: blue;
-  font-weight: 700;
+  color: $purple;
+  font-weight: 600;
   text-decoration: none;
     &:hover {
       color: $black;
