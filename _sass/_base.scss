@@ -1,0 +1,306 @@
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+	background: #fafafa;
+  font: 20px/1.6 $sans;
+  font-weight: 400;
+  font-kerning: normal;
+  -moz-osx-font-smoothing: grayscale;
+  color: $darkerGray;
+
+  @include mobile {
+  font: 16px/1.5 $sans;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 0 10px;
+  width: 100%;
+
+  @include mobile {
+  padding-left:  1.2rem;
+  padding-right: 1.2rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  font-weight: 600;
+  line-height: 1.6;
+  color: $gray;
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  @include mobile {
+    font-size: 16px;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $purple;
+  text-decoration: underline;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $black;
+  }
+}
+
+.logo {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+  &:hover {
+      transform:scale(3);
+    }
+}
+
+.blog--head {
+  text-decoration: none;
+  font-family: $sans;
+  color: $darkPurple;
+  background-color: $lighterPurple;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+
+ul {
+  list-style-position: outside;
+  list-style-type: circle;
+  font-family: $mono;
+  font-size: 18px;
+  padding: 1rem;
+  li {
+  color: $darkPurple;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+span {
+  color: $darkPurple;
+  background-color: $lighterPurple;
+    &.arrows {
+      color: $lightGray;
+      background-color: transparent;
+    }
+}
+
+.twitter-tweet {
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding: 0.5em;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightestGray;
+}
+::selection {
+  color: $black;
+  background: $lightestGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 3rem;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    font-family: $mono;
+    color: $darkPurple;
+    background-color: $lighterPurple;
+    margin: 0.3rem 0 0.3rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+// Footnotes
+
+li {
+  margin-bottom: 1rem;
+    &:target {
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    border-radius: 4px;
+    color: $darkPurple;
+    background-color: $lighterPurple;
+    }
+    a {
+      color: $darkPurple;
+    }
+}
+
+.footnotes {
+  font-family: $sans;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footnote {
+  @include smallscript;
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 2px;
+  letter-spacing: 1px;
+  &::before {
+    content: '[';
+  }
+  &::after {
+    content: ']';
+  }
+}
+
+.reversefootnote {
+  @include smallscript;
+  vertical-align: middle;
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.post--titel {
+  font-family: $sans;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+    color: $black;
+    border-bottom: 1px solid $lightPurple;
+    &:hover {
+      color: $purple;
+    }
+  }
+  }
+
+.post--date {
+  font-family: $mono;
+  font-size: 14px;
+  color: $lightGray;
+    }
+
+.post--categories {
+  font-family: $mono;
+  font-size: 14px;
+  color: $darkGreen;
+  background-color: $lighterGreen;
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px
+}
+
+.comments {
+    margin-top: 10px;
+  }
+
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer {
+  padding: 1rem;
+  border-radius: 4px;
+  color: $darkPurple;
+  background-color: $lighterPurple;
+}
+
+.about {
+  color: $darkPurple;
+  text-decoration: none;
+  border-bottom: 1px solid $purple;
+}
