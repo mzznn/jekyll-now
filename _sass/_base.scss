@@ -9,7 +9,7 @@ html {
 
 body {
 	background: #fafafa;
-  font: 20px/1.6 $sans;
+  font: 20px/1.6 $serif;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -93,7 +93,7 @@ a {
 ul {
   list-style-position: outside;
   list-style-type: circle;
-  font-family: $mono;
+  font-family: $sans;
   font-size: 18px;
   padding: 1rem;
   li {
@@ -203,7 +203,7 @@ img {
 
 .post {
   blockquote {
-    font-family: $mono;
+    font-family: $sans;
     color: $darkPurple;
     background-color: $lighterPurple;
     margin: 0.3rem 0 0.3rem 0;
@@ -267,13 +267,13 @@ li {
   }
 
 .post--date {
-  font-family: $mono;
+  font-family: $sans;
   font-size: 14px;
   color: $lightGray;
     }
 
 .post--categories {
-  font-family: $mono;
+  font-family: $sans;
   font-size: 14px;
   color: $darkGreen;
   background-color: $lighterGreen;

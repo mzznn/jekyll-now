@@ -25,9 +25,9 @@ $lightGreen:    lighten( $green, 20% );
 $lighterGreen:  lighten( $green, 32% );
 
 // Font stacks
-$sans: 'Fira Sans', sans-serif;
-$serif: serif;
-$mono: 'Fira Mono', monospace;
+$sans: 'IBM Plex Sans', sans-serif;
+$serif: 'IBM Plex Serif', serif;
+$mono: monospace;
 
 // Mobile breakpoints
 @mixin mobile {
