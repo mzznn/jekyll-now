@@ -61,7 +61,7 @@ p {
 }
 
 a {
-  color: $purple;
+  color: $color-main;
   text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
@@ -83,8 +83,8 @@ a {
 .blog--head {
   text-decoration: none;
   font-family: $sans;
-  color: $darkPurple;
-  background-color: $lighterPurple;
+  color: $color-main--dark;
+  background-color: $color-main--lighter;
   padding: 4px;
   border-radius: 4px;
 }
@@ -97,7 +97,7 @@ ul {
   font-size: 18px;
   padding: 1rem;
   li {
-  color: $darkPurple;
+  color: $color-main--dark;
   }
 }
 
@@ -124,8 +124,8 @@ strong, b {
 }
 
 span {
-  color: $darkPurple;
-  background-color: $lighterPurple;
+  color: $color-main--darker;
+  background-color: $color-main--lighter;
     &.arrows {
       color: $lightGray;
       background-color: transparent;
@@ -204,13 +204,13 @@ img {
 .post {
   blockquote {
     font-family: $sans;
-    color: $darkPurple;
-    background-color: $lighterPurple;
+    color: $color-main--dark;
+    background-color: $color-main--lighter;
     margin: 0.3rem 0 0.3rem 0;
     padding: 1rem;
     border-radius: 4px;
   }
-
+}
 // Footnotes
 
 li {
@@ -218,11 +218,11 @@ li {
     &:target {
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
     border-radius: 4px;
-    color: $darkPurple;
-    background-color: $lighterPurple;
+    color: $color-main--dark;
+    background-color: $color-main--lighter;
     }
     a {
-      color: $darkPurple;
+      color: $color-main--dark;
     }
 }
 
@@ -259,9 +259,9 @@ li {
   a {
     text-decoration: none;
     color: $black;
-    border-bottom: 1px solid $lightPurple;
+    border-bottom: 1px solid $color-main--light;
     &:hover {
-      color: $purple;
+      color: $color-main;
     }
   }
   }
@@ -275,8 +275,8 @@ li {
 .post--categories {
   font-family: $sans;
   font-size: 14px;
-  color: $darkGreen;
-  background-color: $lighterGreen;
+  color: $color-secondary-dark;
+  background-color: $color-secondary--lighter;
   padding: 2px 4px 2px 4px;
   border-radius: 4px
 }
@@ -285,7 +285,6 @@ li {
     margin-top: 10px;
   }
 
-}
 
 .wrapper-footer {
   margin-top: 50px;
@@ -295,12 +294,12 @@ li {
 footer {
   padding: 1rem;
   border-radius: 4px;
-  color: $darkPurple;
-  background-color: $lighterPurple;
+  color: $color-main--dark;
+  background-color: $color-main--lighter;
 }
 
 .about {
-  color: $darkPurple;
+  color: $color-main--dark;
   text-decoration: none;
-  border-bottom: 1px solid $purple;
+  border-bottom: 1px solid $color-main;
 }

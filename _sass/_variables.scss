@@ -12,17 +12,17 @@ $lightGray: #a2a2a2;
 $lightestGray: #e2e2e2;
 $white: #ffffff;
 
-$purple: #706fd3;
-$darkerPurple:    darken( $purple, 32% );
-$darkPurple:      darken( $purple, 22% );
-$lightPurple:     lighten( $purple, 20% );
-$lighterPurple:   lighten( $purple, 32% );
+$color-main: #ff6348;
+$color-main--darker:    darken( $color-main, 32% );
+$color-main--dark:      darken( $color-main, 22% );
+$color-main--light:     lighten( $color-main, 20% );
+$color-main--lighter:   lighten( $color-main, 32% );
 
-$green: #47c652;
-$darkerGreen:   darken( $green, 32% );
-$darkGreen:     darken( $green, 22% );
-$lightGreen:    lighten( $green, 20% );
-$lighterGreen:  lighten( $green, 32% );
+$color-secondary: #47c652;
+$color-secondary--darker:   darken( $color-secondary, 32% );
+$color-secondary-dark:     darken( $color-secondary, 22% );
+$color-secondary-light:    lighten( $color-secondary, 20% );
+$color-secondary--lighter:  lighten( $color-secondary, 32% );
 
 // Font stacks
 $sans: 'IBM Plex Sans', sans-serif;
@@ -39,7 +39,7 @@ $mono: monospace;
 // Footnotes
 @mixin smallscript {
   font-family: $sans;
-  color: $purple;
+  color: $color-main;
   font-weight: 600;
   text-decoration: none;
     &:hover {
