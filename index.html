@@ -13,7 +13,10 @@ layout: default
         </span>
       </div>
 
-      <div class="post--titel"><span class="arrows">&raquo;</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+      <div class="post--titel">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+        <p>{{ post.excerpt }}</p></a>
+      </div>
 
 
     </article>

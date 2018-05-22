@@ -9,20 +9,20 @@ html {
 
 body {
 	background: #fafafa;
-  font: 20px/1.6 $serif;
+  font: 22px/1.6 $serif;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
   color: $darkerGray;
 
   @include mobile {
-  font: 16px/1.5 $sans;
+  font: 16px/1.5 $serif;
   }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 
@@ -47,9 +47,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 28px;
   @include mobile {
-    font-size: 16px;
+    font-size: 20px;
   }
   a {
     color: inherit;
@@ -57,12 +57,14 @@ h1 {
 }
 
 p {
+  font-family: inherit;
   margin: 15px 0;
 }
 
 a {
-  color: $color-main;
   text-decoration: underline;
+  text-decoration-color: $lightGray;
+  color: $darkGray;
 	cursor: pointer;
   &:hover, &:active {
     color: $black;
@@ -83,8 +85,6 @@ a {
 .blog--head {
   text-decoration: none;
   font-family: $sans;
-  color: $color-main--dark;
-  background-color: $color-main--lighter;
   padding: 4px;
   border-radius: 4px;
 }
@@ -94,10 +94,8 @@ ul {
   list-style-position: outside;
   list-style-type: circle;
   font-family: $sans;
-  font-size: 18px;
   padding: 1rem;
   li {
-  color: $color-main--dark;
   }
 }
 
@@ -124,8 +122,8 @@ strong, b {
 }
 
 span {
-  color: $color-main--darker;
-  background-color: $color-main--lighter;
+  color: $color-secondary--darker;
+  background-color: $color-secondary--lighter;
     &.arrows {
       color: $lightGray;
       background-color: transparent;
@@ -218,11 +216,12 @@ li {
     &:target {
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
     border-radius: 4px;
-    color: $color-main--dark;
-    background-color: $color-main--lighter;
+    color: $black;
+    background-color: $lightestGray;
     }
     a {
-      color: $color-main--dark;
+      color: $black;
+      text-decoration-color: $black;
     }
 }
 
@@ -255,14 +254,23 @@ li {
 
 .post--titel {
   font-family: $sans;
+  font-size: 40px;
   font-weight: 400;
+  p {
+    font-size: 22px;
+  }
   a {
     text-decoration: none;
     color: $black;
-    border-bottom: 1px solid $color-main--light;
     &:hover {
-      color: $color-main;
+      color: $darkGray;
     }
+  }
+  @include mobile {
+  font-size: 26px;
+    p {
+  font: 16px/1.5 $sans;
+  }
   }
   }
 
@@ -275,8 +283,8 @@ li {
 .post--categories {
   font-family: $sans;
   font-size: 14px;
-  color: $color-secondary-dark;
-  background-color: $color-secondary--lighter;
+  color: $black;
+  background-color: $lightestGray;
   padding: 2px 4px 2px 4px;
   border-radius: 4px
 }
@@ -292,15 +300,20 @@ li {
 }
 
 footer {
-  padding: 1rem;
-  font-size: 75%;
+  font-family: $sans;
+  padding: 1rem 0;
+  font-size: 80%;
   border-radius: 4px;
-  color: $color-main--dark;
-  background-color: $color-main--lighter;
+}
+
+.flex-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .about {
-  color: $color-main--dark;
-  text-decoration: none;
-  border-bottom: 1px solid $color-main;
+  color: $black;
+  text-decoration: underline;
+  text-decoration-color: $lightGray;
 }

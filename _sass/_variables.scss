@@ -9,7 +9,7 @@ $darkerGray: #222222;
 $darkGray: #333333;
 $gray: #666666;
 $lightGray: #a2a2a2;
-$lightestGray: #e2e2e2;
+$lightestGray: #f0f0f0;
 $white: #ffffff;
 
 $color-main: #2298ff;
@@ -39,7 +39,7 @@ $mono: monospace;
 // Footnotes
 @mixin smallscript {
   font-family: $sans;
-  color: $color-main;
+  color: $black;
   font-weight: 600;
   text-decoration: none;
     &:hover {
