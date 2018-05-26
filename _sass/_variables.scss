@@ -12,13 +12,13 @@ $lightGray: #a2a2a2;
 $lightestGray: #f0f0f0;
 $white: #ffffff;
 
-$color-main: #2298ff;
+$color-main: #ff5252;
 $color-main--darker:    darken( $color-main, 32% );
 $color-main--dark:      darken( $color-main, 22% );
 $color-main--light:     lighten( $color-main, 20% );
 $color-main--lighter:   lighten( $color-main, 32% );
 
-$color-secondary: #47c652;
+$color-secondary: #33d9b2;
 $color-secondary--darker:   darken( $color-secondary, 32% );
 $color-secondary-dark:     darken( $color-secondary, 22% );
 $color-secondary-light:    lighten( $color-secondary, 20% );
@@ -38,7 +38,7 @@ $mono: monospace;
 
 // Footnotes
 @mixin smallscript {
-  font-family: $sans;
+  font-family: sans-serif;
   color: $black;
   font-weight: 600;
   text-decoration: none;

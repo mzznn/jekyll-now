@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
   font-weight: 600;
   line-height: 1.6;
-  color: $gray;
-  text-align: center;
+  color: $black;
+  text-align: left;
   margin: 50px 0 0 0;
   padding: 0;
 
@@ -57,17 +57,21 @@ h1 {
 }
 
 p {
-  font-family: inherit;
   margin: 15px 0;
+}
+
+#excerpt {
+  font-family: $sans;
+  color: $gray;
 }
 
 a {
   text-decoration: underline;
   text-decoration-color: $lightGray;
-  color: $darkGray;
+  color: $black;
 	cursor: pointer;
   &:hover, &:active {
-    color: $black;
+    text-decoration-color: $black;
   }
 }
 
@@ -85,8 +89,6 @@ a {
 .blog--head {
   text-decoration: none;
   font-family: $sans;
-  padding: 4px;
-  border-radius: 4px;
 }
 
 
