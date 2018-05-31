@@ -63,6 +63,9 @@ p {
 #excerpt {
   font-family: $sans;
   color: $gray;
+  a {
+    color: rgb(34, 34, 34);
+  }
 }
 
 a {
