@@ -9,14 +9,15 @@ html {
 
 body {
 	background: #fafafa;
-  font: 22px/1.6 $serif;
+  font: 22px/1.6 $sans;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
-  // color: $darkerGray;
+  text-rendering: optimizeLegibility;
+  color: $darkerGray;
 
   @include mobile {
-  font: 16px/1.5 $serif;
+  font: 16px/1.5 $sans;
   }
 }
 
@@ -33,10 +34,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $sans;
-  font-weight: 600;
+  font-family: $serif;
+  font-weight: 400;
   line-height: 1.6;
-  // color: $black;
+  color: $black;
   text-align: left;
   margin: 50px 0 0 0;
   padding: 0;
@@ -52,7 +53,7 @@ h1 {
     font-size: 20px;
   }
   a {
-    // color: inherit;
+    color: inherit;
   }
 }
 
@@ -62,16 +63,16 @@ p {
 
 #excerpt {
   font-family: $sans;
-  // color: $gray;
+  color: $gray;
   a {
-    // color: rgb(34, 34, 34);
+    color: $black;
   }
 }
 
 a {
   text-decoration: underline;
   text-decoration-color: $lightGray;
-  // color: $black;
+  color: $black;
 	cursor: pointer;
   &:hover, &:active {
     text-decoration-color: $black;
@@ -82,7 +83,6 @@ a {
   color: black;
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase;
   transition: .2s ease-in-out;
   &:hover {
       transform:scale(3);
@@ -92,6 +92,7 @@ a {
 .blog--head {
   text-decoration: none;
   font-family: $sans;
+  color: $color-main;
 }
 
 
@@ -123,10 +124,11 @@ em, i {
 }
 
 strong, b {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 span {
+  font-family: $serif;
   color: $color-secondary--darker;
   background-color: $color-secondary--lighter;
     &.arrows {
@@ -206,7 +208,7 @@ img {
 
 .post {
   blockquote {
-    font-family: $sans;
+    font-family: $serif;
     color: $color-main--dark;
     background-color: $color-main--lighter;
     margin: 0.3rem 0 0.3rem 0;
@@ -258,7 +260,7 @@ li {
 }
 
 .post--titel {
-  font-family: $sans;
+  font-family: $serif;
   font-size: 40px;
   font-weight: 400;
   p {
@@ -282,7 +284,7 @@ li {
 .post--date {
   font-family: $sans;
   font-size: 14px;
-  // color: $lightGray;
+  color: $color-main;
     }
 
 .post--categories {

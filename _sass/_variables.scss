@@ -25,8 +25,8 @@ $color-secondary-light:    lighten( $color-secondary, 20% );
 $color-secondary--lighter:  lighten( $color-secondary, 32% );
 
 // Font stacks
-$sans: 'IBM Plex Sans', sans-serif;
-$serif: 'IBM Plex Serif', serif;
+$sans: 'Chivo', sans-serif;
+$serif: 'Asul', serif;
 $mono: monospace;
 
 // Mobile breakpoints
@@ -45,17 +45,4 @@ $mono: monospace;
     &:hover {
       color: $black;
     }
-}
-
-// Random Colors for Homepage
-
-$s-min: 20;
-$s-max: 70;
-$l-min: 30;
-$l-max: 90;
-
-@for $i from 1 through 100 {
-  .posts:nth-child(#{$i}) a {
-    color: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min));
-  }
 }
