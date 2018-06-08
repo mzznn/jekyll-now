@@ -46,3 +46,16 @@ $mono: monospace;
       color: $black;
     }
 }
+
+// Random Colors for Homepage
+
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+@for $i from 1 through 100 {
+  .posts:nth-child(#{$i}) a {
+    color: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min));
+  }
+}

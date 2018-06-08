@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
-  color: $darkerGray;
+  // color: $darkerGray;
 
   @include mobile {
   font: 16px/1.5 $serif;
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
   font-weight: 600;
   line-height: 1.6;
-  color: $black;
+  // color: $black;
   text-align: left;
   margin: 50px 0 0 0;
   padding: 0;
@@ -52,7 +52,7 @@ h1 {
     font-size: 20px;
   }
   a {
-    color: inherit;
+    // color: inherit;
   }
 }
 
@@ -62,16 +62,16 @@ p {
 
 #excerpt {
   font-family: $sans;
-  color: $gray;
+  // color: $gray;
   a {
-    color: rgb(34, 34, 34);
+    // color: rgb(34, 34, 34);
   }
 }
 
 a {
   text-decoration: underline;
   text-decoration-color: $lightGray;
-  color: $black;
+  // color: $black;
 	cursor: pointer;
   &:hover, &:active {
     text-decoration-color: $black;
@@ -266,7 +266,7 @@ li {
   }
   a {
     text-decoration: none;
-    color: $black;
+    // color: $black;
     &:hover {
       color: $darkGray;
     }
@@ -282,7 +282,7 @@ li {
 .post--date {
   font-family: $sans;
   font-size: 14px;
-  color: $lightGray;
+  // color: $lightGray;
     }
 
 .post--categories {
