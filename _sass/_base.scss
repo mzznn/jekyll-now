@@ -9,7 +9,7 @@ html {
 
 body {
 	background: #fafafa;
-  font: 22px/1.6 $sans;
+  font: 22px/1.6 $serif;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +17,7 @@ body {
   color: $darkerGray;
 
   @include mobile {
-  font: 16px/1.5 $sans;
+  font: 16px/1.5 $serif;
   }
 }
 
@@ -34,8 +34,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $serif;
-  font-weight: 400;
+  font-family: $sans;
+  font-weight: 700;
   line-height: 1.6;
   color: $black;
   text-align: left;
@@ -62,7 +62,7 @@ p {
 }
 
 #excerpt {
-  font-family: $sans;
+  font-family: $serif;
   color: $gray;
   a {
     color: $black;
@@ -76,6 +76,7 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     text-decoration-color: $black;
+    cursor: pointer;
   }
 }
 
@@ -128,7 +129,7 @@ strong, b {
 }
 
 span {
-  font-family: $serif;
+  font-family: $sans;
   color: $color-secondary--darker;
   background-color: $color-secondary--lighter;
     &.arrows {
@@ -156,12 +157,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightestGray;
+  color: $color-secondary--lighter;
+  background: $color-secondary--darker;
 }
 ::selection {
-  color: $black;
-  background: $lightestGray;
+  color: $color-secondary--lighter;
+  background: $color-secondary--darker;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -208,7 +209,7 @@ img {
 
 .post {
   blockquote {
-    font-family: $serif;
+    font-family: $sans;
     color: $color-main--dark;
     background-color: $color-main--lighter;
     margin: 0.3rem 0 0.3rem 0;
@@ -260,11 +261,12 @@ li {
 }
 
 .post--titel {
-  font-family: $serif;
+  font-family: $sans;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   p {
     font-size: 22px;
+    font-weight: 400;
   }
   a {
     text-decoration: none;
@@ -323,4 +325,26 @@ footer {
   color: $black;
   text-decoration: underline;
   text-decoration-color: $lightGray;
+}
+
+.info-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 4rem;
+  background-color: $color-tertiary--lighter;
+  color: $color-tertiary-dark;
+  font-family: $sans;
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $color-secondary--darker;
+    background-color: $color-secondary--lighter;
+    cursor: alias;
+  }
 }

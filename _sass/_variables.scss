@@ -24,9 +24,15 @@ $color-secondary-dark:     darken( $color-secondary, 22% );
 $color-secondary-light:    lighten( $color-secondary, 20% );
 $color-secondary--lighter:  lighten( $color-secondary, 32% );
 
+$color-tertiary: #6c28ff;
+$color-tertiary--darker:   darken( $color-tertiary, 32% );
+$color-tertiary-dark:     darken( $color-tertiary, 22% );
+$color-tertiary-light:    lighten( $color-tertiary, 20% );
+$color-tertiary--lighter:  lighten( $color-tertiary, 32% );
+
 // Font stacks
-$sans: 'Chivo', sans-serif;
-$serif: 'Asul', serif;
+$sans: 'IBM Plex Sans', sans-serif;
+$serif: 'IBM Plex Serif', serif;
 $mono: monospace;
 
 // Mobile breakpoints
