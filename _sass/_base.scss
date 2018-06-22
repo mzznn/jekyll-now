@@ -9,7 +9,7 @@ html {
 
 body {
 	background: #fafafa;
-  font: 22px/1.6 $serif;
+  font: 22px/1.75 $sans;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +17,7 @@ body {
   color: $darkerGray;
 
   @include mobile {
-  font: 16px/1.5 $serif;
+  font: 16px/1.5 $sans;
   }
 }
 
@@ -35,7 +35,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.6;
   color: $black;
   text-align: left;
@@ -62,7 +62,7 @@ p {
 }
 
 #excerpt {
-  font-family: $serif;
+  font-family: $sans;
   color: $gray;
   a {
     color: $black;
@@ -210,6 +210,7 @@ img {
 .post {
   blockquote {
     font-family: $sans;
+    font-weight: 400;
     color: $color-main--dark;
     background-color: $color-main--lighter;
     margin: 0.3rem 0 0.3rem 0;
@@ -263,7 +264,7 @@ li {
 .post--titel {
   font-family: $sans;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   p {
     font-size: 22px;
     font-weight: 400;
@@ -287,6 +288,7 @@ li {
   font-family: $sans;
   font-size: 14px;
   color: $color-main;
+  font-weight: 600;
     }
 
 .post--categories {
