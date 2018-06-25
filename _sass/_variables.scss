@@ -31,8 +31,7 @@ $color-tertiary-light:    lighten( $color-tertiary, 20% );
 $color-tertiary--lighter:  lighten( $color-tertiary, 32% );
 
 // Font stacks
-$sans: 'Archivo', sans-serif;
-$mono: monospace;
+$serif: 'Spectral', serif;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -44,10 +43,10 @@ $mono: monospace;
 // Footnotes
 @mixin smallscript {
   font-family: sans-serif;
-  color: $black;
+  color: $color-secondary;
   font-weight: 600;
   text-decoration: none;
     &:hover {
-      color: $black;
+      text-decoration: none;
     }
 }

@@ -10,8 +10,9 @@ layout: default
       </div>
       <div class="post--titel">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <div id="excerpt"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | truncatewords:30 }}</a></div>
       </div>
+        <a id="excerpt" href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt | truncatewords:30 }}</a>
+      
 
 
     </article>

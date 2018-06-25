@@ -8,16 +8,16 @@ html {
 }
 
 body {
-	background: #fafafa;
-  font: 22px/1.75 $sans;
+	background: rgb(3, 3, 3);
+  font: 22px/1.7 $serif;
   font-weight: 400;
   font-kerning: normal;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: $darkerGray;
+  color: $white;
 
   @include mobile {
-  font: 16px/1.5 $sans;
+  font: 16px/1.5 $serif;
   }
 }
 
@@ -34,10 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $sans;
-  font-weight: 600;
   line-height: 1.6;
-  color: $black;
   text-align: left;
   margin: 50px 0 0 0;
   padding: 0;
@@ -48,12 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
   @include mobile {
-    font-size: 20px;
-  }
-  a {
-    color: inherit;
+    // font-size: 20px;
   }
 }
 
@@ -61,46 +54,46 @@ p {
   margin: 15px 0;
 }
 
-#excerpt {
-  font-family: $sans;
-  color: $gray;
-  a {
-    color: $black;
-  }
-}
-
 a {
   text-decoration: underline;
   text-decoration-color: $lightGray;
-  color: $black;
+  color: $white;
 	cursor: pointer;
   &:hover, &:active {
-    text-decoration-color: $black;
+    text-decoration-color: $lightestGray;
     cursor: pointer;
   }
 }
 
 .logo {
-  color: black;
+  font-size: 40px;
   display: inline-block;
   text-decoration: none;
   transition: .2s ease-in-out;
   &:hover {
-      transform:scale(3);
+      transform:scale(1.5);
     }
 }
 
 .blog--head {
   text-decoration: none;
-  font-family: $sans;
-  color: $color-main;
+  color: $white;
 }
 
+.post--date {
+  font: 14px/1.5 sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#excerpt {
+  text-decoration: none;
+  color: $lightGray;
+}
 
 ul {
   list-style-position: outside;
   list-style-type: circle;
-  font-family: $sans;
   padding: 1rem;
   li {
   }
@@ -108,7 +101,6 @@ ul {
 
 ol {
   list-style-type: decimal;
-  font-size: 16px;
   padding: 1rem;
 }
 
@@ -124,14 +116,9 @@ em, i {
   font-style: italic;
 }
 
-strong, b {
-  font-weight: 400;
-}
-
 span {
-  font-family: $sans;
-  color: $color-secondary--darker;
-  background-color: $color-secondary--lighter;
+  color: $color-secondary;
+  // background-color: $color-secondary--lighter;
     &.arrows {
       color: $lightGray;
       background-color: transparent;
@@ -209,10 +196,10 @@ img {
 
 .post {
   blockquote {
-    font-family: $sans;
+    color: $black;
+    background-color: $white;
+    font-family: sans-serif;
     font-weight: 400;
-    color: $color-main--dark;
-    background-color: $color-main--lighter;
     margin: 0.3rem 0 0.3rem 0;
     padding: 1rem;
     border-radius: 4px;
@@ -224,19 +211,15 @@ li {
   margin-bottom: 1rem;
     &:target {
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-    border-radius: 4px;
-    color: $black;
-    background-color: $lightestGray;
+    color: $color-secondary;
     }
     a {
-      color: $black;
-      text-decoration-color: $black;
+      color: $color-secondary;
+      text-decoration: underline;
     }
 }
 
 .footnotes {
-  font-family: $sans;
-  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -258,47 +241,15 @@ li {
   @include smallscript;
   vertical-align: middle;
   margin-left: 4px;
-  font-size: 16px;
+  color: $color-secondary;
 }
 
-.post--titel {
-  font-family: $sans;
-  font-size: 40px;
-  font-weight: 600;
-  p {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  a {
-    text-decoration: none;
-    // color: $black;
-    &:hover {
-      color: $darkGray;
-    }
-  }
-  @include mobile {
-  font-size: 26px;
-    p {
-  font: 16px/1.5 $sans;
-  }
-  }
-  }
-
-.post--date {
-  font-family: $sans;
-  font-size: 14px;
-  color: $color-main;
-  font-weight: 600;
-    }
-
-.post--categories {
-  font-family: $sans;
-  font-size: 14px;
-  color: $black;
-  background-color: $lightestGray;
-  padding: 2px 4px 2px 4px;
-  border-radius: 4px
-}
+// .post--categories {
+//   color: $black;
+//   background-color: $lightestGray;
+//   padding: 2px 4px 2px 4px;
+//   border-radius: 4px
+// }
 
 .comments {
     margin-top: 10px;
@@ -311,9 +262,7 @@ li {
 }
 
 footer {
-  font-family: $sans;
   padding: 1rem 0;
-  font-size: 80%;
   border-radius: 4px;
 }
 
@@ -324,7 +273,7 @@ footer {
 }
 
 .about {
-  color: $black;
+  color: $white;
   text-decoration: underline;
   text-decoration-color: $lightGray;
 }
@@ -338,9 +287,8 @@ footer {
   padding: 4rem;
   background-color: $color-tertiary--lighter;
   color: $color-tertiary-dark;
-  font-family: $sans;
-  font-weight: 700;
-  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 
