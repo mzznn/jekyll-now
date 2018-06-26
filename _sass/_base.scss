@@ -56,11 +56,11 @@ p {
 
 a {
   text-decoration: underline;
-  text-decoration-color: $lightGray;
-  color: $white;
+  text-decoration-color: $color-main;
+  color: $color-main;
 	cursor: pointer;
   &:hover, &:active {
-    text-decoration-color: $lightestGray;
+    text-decoration-color: $white;
     cursor: pointer;
   }
 }
@@ -84,6 +84,16 @@ a {
   font: 14px/1.5 sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.post--titel {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: $white;
+  & a {
+    color: $white;
+    text-decoration-color: $white;
+  }
 }
 
 #excerpt {
