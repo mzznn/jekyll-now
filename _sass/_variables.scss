@@ -43,7 +43,7 @@ $serif: 'Spectral', serif;
 // Footnotes
 @mixin smallscript {
   font-family: sans-serif;
-  color: $color-secondary;
+  color: $color-main;
   font-weight: 600;
   text-decoration: none;
     &:hover {

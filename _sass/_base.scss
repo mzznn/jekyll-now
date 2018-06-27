@@ -55,11 +55,12 @@ p {
 }
 
 a {
+  color: $white;
   text-decoration: underline;
   text-decoration-color: $color-main;
-  color: $color-main;
 	cursor: pointer;
   &:hover, &:active {
+    color: $color-main;
     text-decoration-color: $white;
     cursor: pointer;
   }
@@ -91,8 +92,9 @@ a {
   font-weight: 400;
   color: $white;
   & a {
-    color: $white;
-    text-decoration-color: $white;
+    color: $color-main;
+    text-decoration: underline;
+    text-decoration-color: $color-main;
   }
 }
 
@@ -221,10 +223,10 @@ li {
   margin-bottom: 1rem;
     &:target {
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-    color: $color-secondary;
+    color: $color-main;
     }
     a {
-      color: $color-secondary;
+      color: $white;
       text-decoration: underline;
     }
 }
@@ -251,7 +253,7 @@ li {
   @include smallscript;
   vertical-align: middle;
   margin-left: 4px;
-  color: $color-secondary;
+  color: $color-main;
 }
 
 // .post--categories {
