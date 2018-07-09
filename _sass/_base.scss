@@ -8,28 +8,31 @@ html {
 }
 
 body {
-	background: rgb(3, 3, 3);
-  font: 22px/1.7 $serif;
+	background: rgb(255, 255, 255);
+  font-family: $serif;
+  font-size: calc(.00485*100vw + 14.18182px);
   font-weight: 400;
   font-kerning: normal;
+  line-height: 165%;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: $white;
+  color: rgb(20, 20, 20);
 
   @include mobile {
-  font: 16px/1.5 $serif;
+  font: 16px/1.6 $serif;
   }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 58.333%;
   padding: 0 10px;
   width: 100%;
 
   @include mobile {
-  padding-left:  1.2rem;
-  padding-right: 1.2rem;
+  max-width: 95.333%;
+  padding-left:  0.8rem;
+  padding-right: 0.8rem;
   }
 }
 
@@ -55,13 +58,13 @@ p {
 }
 
 a {
-  color: $white;
+  color: $black;
   text-decoration: underline;
-  text-decoration-color: $color-main;
-	cursor: pointer;
+  text-decoration-color: rgb(158, 160, 166);
+  cursor: pointer;
+  transition: .2s ease-in-out;
   &:hover, &:active {
-    color: $color-main;
-    text-decoration-color: $white;
+    color: $lightGray;
     cursor: pointer;
   }
 }
@@ -72,35 +75,37 @@ a {
   text-decoration: none;
   transition: .2s ease-in-out;
   &:hover {
-      transform:scale(1.5);
+      color: black;
+      transform:scale(1.25) rotateZ(-12deg);
     }
 }
 
 .blog--head {
   text-decoration: none;
-  color: $white;
 }
 
 .post--date {
-  font: 14px/1.5 sans-serif;
-  font-weight: 600;
+  font: 14px/1.5 $serif;
+  color: rgb(158, 160, 166);
   margin-bottom: 10px;
 }
 
 .post--titel {
-  font-family: sans-serif;
-  font-weight: 400;
-  color: $white;
+  font-size: calc(.00485*100vw + 24px);
+  line-height: 150%;
+  font-weight: 300;
+  color: rgb(158, 160, 166);
   & a {
-    color: $color-main;
-    text-decoration: underline;
-    text-decoration-color: $color-main;
+    color: rgb(158, 160, 166);
+    text-decoration: none;
+  }
+  & a:hover {
+    color: black;
   }
 }
 
 #excerpt {
   text-decoration: none;
-  color: $lightGray;
 }
 
 ul {
@@ -128,14 +133,6 @@ em, i {
   font-style: italic;
 }
 
-span {
-  color: $color-secondary;
-  // background-color: $color-secondary--lighter;
-    &.arrows {
-      color: $lightGray;
-      background-color: transparent;
-    }
-}
 
 .twitter-tweet {
   margin: auto;
@@ -208,10 +205,6 @@ img {
 
 .post {
   blockquote {
-    color: $black;
-    background-color: $white;
-    font-family: sans-serif;
-    font-weight: 400;
     margin: 0.3rem 0 0.3rem 0;
     padding: 1rem;
     border-radius: 4px;
@@ -223,10 +216,8 @@ li {
   margin-bottom: 1rem;
     &:target {
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-    color: $color-main;
     }
     a {
-      color: $white;
       text-decoration: underline;
     }
 }
@@ -253,7 +244,6 @@ li {
   @include smallscript;
   vertical-align: middle;
   margin-left: 4px;
-  color: $color-main;
 }
 
 // .post--categories {
@@ -285,9 +275,7 @@ footer {
 }
 
 .about {
-  color: $white;
   text-decoration: underline;
-  text-decoration-color: $lightGray;
 }
 
 .info-highlight {
@@ -297,16 +285,16 @@ footer {
   text-align: center;
   text-decoration: none;
   padding: 4rem;
-  background-color: $color-tertiary--lighter;
-  color: $color-tertiary-dark;
-  font-family: sans-serif;
-  font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 
   &:hover {
-    color: $color-secondary--darker;
-    background-color: $color-secondary--lighter;
     cursor: alias;
   }
+}
+
+#arrow {
+  font-weight: 300;
+  color: rgb(158, 160, 166);
+  text-decoration: none;
 }

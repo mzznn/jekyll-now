@@ -31,7 +31,7 @@ $color-tertiary-light:    lighten( $color-tertiary, 20% );
 $color-tertiary--lighter:  lighten( $color-tertiary, 32% );
 
 // Font stacks
-$serif: 'Spectral', serif;
+$serif: 'IBM Plex Serif', serif;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -43,7 +43,7 @@ $serif: 'Spectral', serif;
 // Footnotes
 @mixin smallscript {
   font-family: sans-serif;
-  color: $color-main;
+  color: $black;
   font-weight: 600;
   text-decoration: none;
     &:hover {
