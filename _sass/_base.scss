@@ -58,13 +58,14 @@ p {
 }
 
 a {
-  color: $black;
+  color: black;
   text-decoration: underline;
-  text-decoration-color: rgb(158, 160, 166);
+  text-decoration-color: blue;
   cursor: pointer;
   transition: .2s ease-in-out;
   &:hover, &:active {
-    color: $lightGray;
+    color: $black;
+    text-decoration-color: $black;
     cursor: pointer;
   }
 }
@@ -296,5 +297,10 @@ footer {
 #arrow {
   font-weight: 300;
   color: rgb(158, 160, 166);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  &:hover {
+    color: $black;
+
+  }
 }
