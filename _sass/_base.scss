@@ -37,6 +37,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
   line-height: 1.6;
   text-align: left;
   margin: 50px 0 0 0;
@@ -86,18 +87,19 @@ a {
 }
 
 .post--date {
-  font: 14px/1.5 $serif;
+  font: 14px/1.5 $sans;
   color: rgb(158, 160, 166);
   margin-bottom: 10px;
 }
 
 .post--titel {
+  font-family: $sans;
+  font-weight: 300;
   font-size: calc(.00485*100vw + 24px);
   line-height: 150%;
-  font-weight: 300;
-  color: rgb(158, 160, 166);
+  color: rgb(0, 0, 0);
   & a {
-    color: rgb(158, 160, 166);
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   & a:hover {
@@ -154,12 +156,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $color-secondary--lighter;
-  background: $color-secondary--darker;
+  color: $black;
+  background: $color-tertiary--lighter;
 }
 ::selection {
-  color: $color-secondary--lighter;
-  background: $color-secondary--darker;
+  color: $black;
+  background: $color-tertiary--lighter;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -216,6 +218,8 @@ img {
 li {
   margin-bottom: 1rem;
     &:target {
+    background-color: $color-secondary--lighter;
+    border-radius: 4px;
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
     }
     a {
@@ -224,6 +228,9 @@ li {
 }
 
 .footnotes {
+  font-family: $sans;
+  font-weight: 300;
+  font-size: 90%;
   line-height: 1.5;
 }
 
@@ -295,12 +302,12 @@ footer {
 }
 
 #arrow {
-  font-weight: 300;
-  color: rgb(158, 160, 166);
+  font-weight: 500;
+  font-family: $sans;
+  color: $black;
   text-decoration: underline;
   text-decoration-color: blue;
   &:hover {
-    color: $black;
-
+    text-decoration-color: $black;
   }
 }

@@ -11,10 +11,10 @@ layout: default
       <div class="post--titel">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </div>
-        {{ post.excerpt | truncatewords:30 }} &nbsp; <a id="arrow" href="{{ site.baseurl }}{{ post.url }}">Weiterlesen</a>
+        {{ post.excerpt | truncatewords:50 }} <br><br>
+        &rarrhk; &nbsp; <a id="arrow" href="{{ site.baseurl }}{{ post.url }}">Weiterlesen</a>
       
-
-
     </article>
+    
   {% endfor %}
 </div>

@@ -31,7 +31,8 @@ $color-tertiary-light:    lighten( $color-tertiary, 20% );
 $color-tertiary--lighter:  lighten( $color-tertiary, 32% );
 
 // Font stacks
-$serif: 'IBM Plex Serif', serif;
+$sans: sans-serif;
+$serif: 'Gentium Basic', serif;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -42,7 +43,7 @@ $serif: 'IBM Plex Serif', serif;
 
 // Footnotes
 @mixin smallscript {
-  font-family: sans-serif;
+  font-family: $sans;
   color: $black;
   font-weight: 600;
   text-decoration: none;
