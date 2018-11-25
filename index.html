@@ -5,14 +5,12 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-      <div class="post--date">
-        {{ post.date | date: "%d %b %Y" }}
-      </div>
-      <div class="post--titel">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </div>
-        {{ post.excerpt | truncatewords:50 }} <br><br>
-        &rarrhk; &nbsp; <a id="arrow" href="{{ site.baseurl }}{{ post.url }}">Weiterlesen</a>
+      <h1>{{ post.title }}</h1>
+      <h2>{{ post.subheadline }}</h2>
+      <p class="post_description">{{ post.post_description }} 
+        <br><br>
+        <span id="arrow">&rarrhk;</span> &nbsp; <a href="{{ site.baseurl }}{{ post.url }}">Weiterlesen</a>
+      </p>
       
     </article>
     

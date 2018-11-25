@@ -37,20 +37,34 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
-  line-height: 1.6;
+  line-height: auto;
   text-align: left;
-  margin: 50px 0 0 0;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
   padding: 0;
 
   @include mobile {
     line-height: 1.4;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 h1 {
+  font-size: 22pt;
+  font-weight: 600;
+
   @include mobile {
-    // font-size: 20px;
+    // font-size: 18pt;
   }
+}
+
+h2 {
+  font-size: 22pt;
+  font-weight: 300;
+  color: $gray;
+
+  margin-bottom: 1.25em;
 }
 
 p {
@@ -58,15 +72,13 @@ p {
 }
 
 a {
-  color: black;
+  color: $black;
   text-decoration: underline;
-  text-decoration-color: black;
-  cursor: pointer;
+  text-decoration-color: $black;
   transition: .2s ease-in-out;
   &:hover, &:active {
-    color: $black;
-    text-decoration-color: $color-main;
-    cursor: pointer;
+    color: $gray;
+    text-decoration-color: $lightestGray;
   }
 }
 
@@ -85,26 +97,28 @@ a {
   text-decoration: none;
 }
 
-.post--date {
-  font: 14px/1.5 $sans;
-  color: rgb(158, 160, 166);
-  margin-bottom: 10px;
+.entry {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.post--titel {
-  font-family: $sans;
-  font-weight: 400;
-  font-size: calc(.00485*100vw + 24px);
-  line-height: 150%;
-  color: rgb(0, 0, 0);
-  & a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  & a:hover {
-    color: black;
-  }
+img {
+  left: 50%;
+  margin-left: -25vw;
+  margin-right: -50vw;
+  margin-bottom: 1.25em;
+  max-width: 50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }
+
+
 
 #excerpt {
   text-decoration: none;
@@ -138,13 +152,6 @@ em, i {
 
 .twitter-tweet {
   margin: auto;
-}
-
-img {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  padding: 0.5em;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -211,6 +218,11 @@ img {
     padding: 1rem;
     border-radius: 4px;
   }
+}
+
+p.post_description {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
 }
 // Footnotes
 
@@ -301,12 +313,6 @@ footer {
 }
 
 #arrow {
-  font-weight: 500;
-  font-family: $sans;
+  font-weight: 400;
   color: $black;
-  text-decoration: underline;
-  text-decoration-color: $black;
-  &:hover {
-    text-decoration-color: $color-main;
-  }
 }
