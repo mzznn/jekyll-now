@@ -25,13 +25,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 55.333%;
+  max-width: 55%;
   padding: 0 10px;
 
   @include mobile {
   max-width: 95.333%;
-  padding-left:  0.8rem;
-  padding-right: 0.8rem;
   }
 }
 
@@ -39,14 +37,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
   line-height: auto;
   text-align: left;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
   padding: 0;
 
   @include mobile {
     line-height: 1.4;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
   }
 }
 
@@ -76,7 +70,8 @@ p {
 
 a {
   color: $black;
-  text-decoration: underline;
+  font-family: $sans;
+  text-decoration-line: underline;
   text-decoration-color: $black;
   transition: .2s ease-in-out;
   &:hover, &:active {
@@ -90,7 +85,6 @@ a {
   display: inline-block;
   text-decoration: none;
   transition: .2s ease-in-out;
-  margin-left: 0.8rem;
   &:hover {
       color: black;
       transform:scale(1.25) rotateZ(-12deg);
@@ -101,25 +95,13 @@ a {
   text-decoration: none;
 }
 
-.entry {
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-
-  @include mobile {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 
 img {
-  left: 50%;
-  margin-left: -25vw;
-  margin-right: -50vw;
-  margin-bottom: 1.25em;
-  max-width: 50vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
+  width: 100%;
+  padding: 5%;
+
+  @include mobile {
+  }
 }
 
 
@@ -222,11 +204,6 @@ em, i {
     padding: 1rem;
     border-radius: 4px;
   }
-}
-
-p.post_description {
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
 }
 // Footnotes
 
