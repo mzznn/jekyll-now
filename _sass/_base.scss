@@ -8,18 +8,18 @@ html {
 }
 
 body {
-	background: rgb(255, 255, 255);
-  font-family: $serif;
+	background: $lightestGray;
+  font-family: $sans;
   font-size: calc(.00485*100vw + 14.18182px);
   font-weight: 400;
   font-kerning: normal;
-  line-height: 165%;
+  line-height: 155%;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   color: rgb(20, 20, 20);
 
   @include mobile {
-  font: 12pt/1.6 $serif;
+  font: 12pt/1.5 $sans;
   }
 }
 
@@ -69,10 +69,11 @@ p {
 }
 
 a {
-  color: $black;
+  color: blue;
   font-family: $sans;
+  font-weight: 700;
   text-decoration-line: underline;
-  text-decoration-color: $black;
+  text-decoration-color: blue;
   transition: .2s ease-in-out;
   &:hover, &:active {
     color: $gray;
@@ -81,13 +82,13 @@ a {
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 20px;
   display: inline-block;
   text-decoration: none;
   transition: .2s ease-in-out;
   &:hover {
-      color: black;
-      transform:scale(1.25) rotateZ(-12deg);
+      color: blue;
+      transform:scale(1.15) rotateZ(-6deg);
     }
 }
 
@@ -115,6 +116,7 @@ ul {
   list-style-type: circle;
   padding: 1rem;
   li {
+  font-style: inherit
   }
 }
 
@@ -265,7 +267,8 @@ li {
 
 footer {
   padding: 1rem 0;
-  border-radius: 4px;
+  font-size: 60%;
+  line-height: 150%;
 }
 
 .flex-links {
